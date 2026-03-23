@@ -1,4 +1,30 @@
-﻿/* Get Directions button for branches */
+﻿/* Branch contact row for phone and directions */
+.bcontact-row {
+  display: flex;
+  gap: 12px;
+  margin-top: 8px;
+  flex-wrap: wrap;
+}
+.bdir {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(255,255,255,0.1);
+  border: 2px solid rgba(255,255,255,0.2);
+  border-radius: 30px;
+  padding: 10px 22px;
+  font-family: var(--comic);
+  font-size: 0.98rem;
+  font-weight: 700;
+  color: white;
+  text-decoration: none;
+  transition: background 0.2s;
+}
+.bdir:hover {
+  background: rgba(255,255,255,0.2);
+  color: var(--dark);
+}
+/* Get Directions button for branches */
 .bdir {
   display: inline-block;
   margin-top: 12px;
