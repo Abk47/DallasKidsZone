@@ -1,5 +1,16 @@
 ﻿
 document.addEventListener('DOMContentLoaded', function() {
+    // Why Choose Us cards scroll effect
+    const cardObs = new IntersectionObserver(entries => {
+      entries.forEach((entry, i) => {
+        if (entry.isIntersecting) {
+          setTimeout(() => entry.target.classList.add('card-highlight'), i * 100);
+        } else {
+          entry.target.classList.remove('card-highlight');
+        }
+      });
+    }, { threshold: 0.2 });
+    document.querySelectorAll('.why-choose__card').forEach(card => cardObs.observe(card));
   // Scroll reveal
   const obs = new IntersectionObserver(entries => {
     entries.forEach((e, i) => { if (e.isIntersecting) setTimeout(() => e.target.classList.add('vis'), i * 80); });
