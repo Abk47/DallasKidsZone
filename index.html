@@ -1,0 +1,253 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dallas Kids Zone - Dar es Salaam's Best Nursery & Daycare!</title>
+<link rel="stylesheet" href="src/css/styles.css">
+</head>
+<body>
+
+<div class="bg-shapes">
+  <div class="shape"></div><div class="shape"></div><div class="shape"></div>
+  <div class="shape"></div><div class="shape"></div>
+</div>
+
+<!-- NAV -->
+<nav>
+  <a href="#home" class="nav-logo"><img src="DLogo.png" alt="Dallas Kids Zone Logo" class="nav-logo-img"> Dallas Kids Zone</a>
+  <ul class="nav-links">
+    <li><a href="#why">Why Us</a></li>
+    <li><a href="#activities">Activities</a></li>
+    <li><a href="#gallery">Gallery</a></li>
+    <li><a href="#branches">Branches</a></li>
+    <li><a href="#testimonials">Parents Say</a></li>
+    <li><a href="#enroll" class="nav-cta">Enroll Now!</a></li>
+  </ul>
+  <button class="hamburger" id="hbtn" aria-label="Open menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+<div class="mobile-menu" id="mmenu">
+  <button class="close-menu" id="mclose" aria-label="Close menu">✕</button>
+  <a href="#why"          onclick="closeMenu()">Why Us</a>
+  <a href="#activities"   onclick="closeMenu()">Activities</a>
+  <a href="#gallery"      onclick="closeMenu()">Gallery</a>
+  <a href="#branches"     onclick="closeMenu()">Branches</a>
+  <a href="#testimonials" onclick="closeMenu()">Parents Say</a>
+  <a href="#enroll" class="mcta" onclick="closeMenu()">🎒 Enroll Now!</a>
+</div>
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="hero-bg"></div>
+  <span class="star">⭐</span><span class="star">🌟</span>
+  <span class="star">✨</span><span class="star">🌈</span>
+  <span class="star">🎈</span><span class="star">💫</span>
+  <div>
+    <div class="hero-badge">🏆 Dar es Salaam's Best Daycare & Nursery!</div>
+    <h1 class="hero-title">
+      Where Little <span class="hp">Stars</span><br>
+      <span class="hy">Learn, Play</span> &amp;<br>
+      <span class="hb">Grow!</span>
+    </h1>
+    <p class="hero-sub">A warm, joyful and safe space for your little one to discover the world - through play, creativity and lots of love! 🎉</p>
+    <div class="hero-loc">📍 Two Branches in Dar es Salaam, Tanzania 🇹🇿</div>
+    <div class="hero-btns">
+      <a href="#enroll" class="btn btn-pink">🎒 Enroll Your Child!</a>
+      <a href="#branches" class="btn btn-blue">📍 Find a Branch</a>
+    </div>
+    <div class="hero-cards">
+      <div class="hcard hc1">🧒</div>
+      <div class="hcard hc2">🎨</div>
+      <div class="hcard hc3">📚</div>
+      <div class="hcard hc4">🎡</div>
+      <div class="hcard hc5">🌟</div>
+    </div>
+  </div>
+</section>
+
+<!-- STATS -->
+<div class="stats">
+  <div class="stats-row">
+    <div class="stat reveal"><span class="stat-n" style="color:var(--yellow)">2.5 – 5</span><span class="stat-l">Years Age Range</span></div>
+    <div class="stat reveal"><span class="stat-n" style="color:var(--pink)">2</span><span class="stat-l">Branches in DSM</span></div>
+    <div class="stat reveal"><span class="stat-n" style="color:var(--blue)">21st C</span><span class="stat-l">Modern Curriculum</span></div>
+    <div class="stat reveal"><span class="stat-n" style="color:var(--green)">100%</span><span class="stat-l">Love & Care</span></div>
+  </div>
+</div>
+
+<!-- WHY US -->
+<section class="why" id="why">
+  <div style="text-align:center"><span class="pill" style="background:#FFF0F5;color:var(--pink);border:2px solid var(--pink)">💖 Why Families Love Us</span></div>
+  <h2 class="sec-title">Why Choose <span style="color:var(--pink)">Dallas Kids Zone?</span></h2>
+  <p class="sec-sub">We give your child the very best start in life - every single day!</p>
+  <div class="features">
+    <div class="fcard fc1 reveal"><span class="ficon">🛝</span><div class="ftitle">Amazing Play Equipment</div><p class="fdesc">Swings, slides, trampolines, bicycles & a playhouse - children strengthen their bodies and coordination while having the time of their lives!</p></div>
+    <div class="fcard fc2 reveal"><span class="ficon">📱</span><div class="ftitle">iPad-Based Learning</div><p class="fdesc">We use iPads, educational TV programmes and modern tools to make learning exciting, hands-on and truly 21st-century ready.</p></div>
+    <div class="fcard fc3 reveal"><span class="ficon">📖</span><div class="ftitle">Competence-Based Curriculum</div><p class="fdesc">Learning by doing! Puzzles, activities and projects that build real skills from day one - not just memorising.</p></div>
+    <div class="fcard fc4 reveal"><span class="ficon">🌍</span><div class="ftitle">International Standard</div><p class="fdesc">Dallas Kids Zone is proudly recognised as an International Daycare Centre, right here in the heart of Dar es Salaam!</p></div>
+    <div class="fcard fc5 reveal"><span class="ficon">💚</span><div class="ftitle">Safe & Nurturing</div><p class="fdesc">A secure, loving environment where every child is known by name, celebrated and made to feel special every single day.</p></div>
+    <div class="fcard fc6 reveal"><span class="ficon">👩‍🏫</span><div class="ftitle">Caring Teachers</div><p class="fdesc">Our dedicated staff are trained to guide children through early childhood development with patience, skill and genuine warmth.</p></div>
+  </div>
+</section>
+
+<!-- ACTIVITIES -->
+<section class="acts" id="activities">
+  <h2 class="sec-title">What Your Child <span style="color:var(--blue)">Gets Up To!</span> 🎉</h2>
+  <p class="sec-sub">Every day is packed with fun, discovery and friendship!</p>
+  <div class="tab-row">
+    <button class="tbtn on" data-tab="play">🛝 Outdoor Play</button>
+    <button class="tbtn" data-tab="learn">📚 Learning</button>
+    <button class="tbtn" data-tab="care">💚 Wellbeing</button>
+    <button class="tbtn" data-tab="arts">🎨 Creative Arts</button>
+  </div>
+  <div class="tcontent on" id="t-play">
+    <div class="agrid">
+      <div class="aitem ap"><span class="aemoji">🛝</span><div class="alabel">Slides</div></div>
+      <div class="aitem ap"><span class="aemoji">🎡</span><div class="alabel">Swings</div></div>
+      <div class="aitem ap"><span class="aemoji">🚲</span><div class="alabel">Bicycles</div></div>
+      <div class="aitem ap"><span class="aemoji">🤸</span><div class="alabel">Trampoline</div></div>
+      <div class="aitem ap"><span class="aemoji">🏠</span><div class="alabel">Play House</div></div>
+      <div class="aitem ap"><span class="aemoji">⚽</span><div class="alabel">Ball Games</div></div>
+    </div>
+  </div>
+  <div class="tcontent" id="t-learn">
+    <div class="agrid">
+      <div class="aitem ab"><span class="aemoji">📱</span><div class="alabel">iPad Sessions</div></div>
+      <div class="aitem ab"><span class="aemoji">🧩</span><div class="alabel">Puzzles</div></div>
+      <div class="aitem ab"><span class="aemoji">📺</span><div class="alabel">Edu TV</div></div>
+      <div class="aitem ab"><span class="aemoji">✏️</span><div class="alabel">Writing</div></div>
+      <div class="aitem ab"><span class="aemoji">🔢</span><div class="alabel">Numbers</div></div>
+      <div class="aitem ab"><span class="aemoji">🔤</span><div class="alabel">Alphabet</div></div>
+    </div>
+  </div>
+  <div class="tcontent" id="t-care">
+    <div class="agrid">
+      <div class="aitem ag"><span class="aemoji">🍎</span><div class="alabel">Nutrition</div></div>
+      <div class="aitem ag"><span class="aemoji">😴</span><div class="alabel">Rest Time</div></div>
+      <div class="aitem ag"><span class="aemoji">🤝</span><div class="alabel">Social Skills</div></div>
+      <div class="aitem ag"><span class="aemoji">💬</span><div class="alabel">Communication</div></div>
+      <div class="aitem ag"><span class="aemoji">🌿</span><div class="alabel">Nature Time</div></div>
+      <div class="aitem ag"><span class="aemoji">🧘</span><div class="alabel">Mindfulness</div></div>
+    </div>
+  </div>
+  <div class="tcontent" id="t-arts">
+    <div class="agrid">
+      <div class="aitem au"><span class="aemoji">🎨</span><div class="alabel">Painting</div></div>
+      <div class="aitem au"><span class="aemoji">🎵</span><div class="alabel">Music</div></div>
+      <div class="aitem au"><span class="aemoji">💃</span><div class="alabel">Dance</div></div>
+      <div class="aitem au"><span class="aemoji">🖍️</span><div class="alabel">Drawing</div></div>
+      <div class="aitem au"><span class="aemoji">🏺</span><div class="alabel">Clay Work</div></div>
+      <div class="aitem au"><span class="aemoji">🎭</span><div class="alabel">Role Play</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- AGES -->
+<section class="ages">
+  <h2 class="sec-title">The <span style="color:var(--purple)">Perfect Age</span> to Start! 👶</h2>
+  <p class="sec-sub">We welcome children from age 2½ all the way to 5 years old</p>
+  <div class="age-row">
+    <div class="astep reveal"><div class="abubble" style="background:#FFE8F0;color:var(--pink)">2.5 yrs</div><div class="adesc">First steps of independence & making friends!</div></div>
+    <div class="astep reveal"><div class="abubble" style="background:#E8F9FF;color:var(--blue)">3 yrs</div><div class="adesc">Language, creativity and curiosity bloom!</div></div>
+    <div class="astep reveal"><div class="abubble" style="background:#FFFDE7;color:#b58900">4 yrs</div><div class="adesc">Problem-solving & reading readiness begin!</div></div>
+    <div class="astep reveal"><div class="abubble" style="background:#F0FFF4;color:var(--green)">5 yrs</div><div class="adesc">Ready for primary - confident & prepared!</div></div>
+  </div>
+</section>
+
+<!-- BRANCHES -->
+<section class="branches" id="branches">
+  <h2 class="sec-title" style="color:white">Our Two <span style="color:var(--yellow)">Locations</span> 📍</h2>
+  <p class="sec-sub" style="color:rgba(255,255,255,0.58)">Both in Dar es Salaam - find your nearest branch!</p>
+  <div class="brow">
+    <div class="bcard bk reveal">
+      <div class="bbadge bpink">Branch 1</div>
+      <div class="bname">🏝️ Kigamboni</div>
+      <p class="bdetail">Kibada Block No. 23, Kigamboni<br>Dar es Salaam, Tanzania 🇹🇿<br><br>Our island branch - fresh air, open space and a beautiful environment for your little one to thrive!</p>
+      <a href="tel:+255655306060" class="bphone">📞 0655-306060</a>
+    </div>
+    <div class="bcard bm reveal">
+      <div class="bbadge bblue">Branch 2</div>
+      <div class="bname">🏙️ Mlimani City</div>
+      <p class="bdetail">Mlimani City Area<br>Dar es Salaam, Tanzania 🇹🇿<br><br>Conveniently located for city families - modern, vibrant and easily accessible from all directions!</p>
+      <a href="tel:+255717406060" class="bphone">📞 0717-406060</a>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="testi" id="testimonials">
+  <h2 class="sec-title">What <span style="color:var(--orange)">Parents Say!</span> 💬</h2>
+  <p class="sec-sub">Hear it straight from the families who trust us every day!</p>
+  <div class="tcarousel">
+    <div class="tslide on">
+      <div class="tstars">⭐⭐⭐⭐⭐</div>
+      <p class="ttext">"My daughter used to cry every morning - now she literally runs to the classroom! The teachers at Dallas Kids Zone are absolutely amazing. She's learned so much in just a few months!"</p>
+      <div class="tname">Amina J.</div><div class="trole">Parent · Kigamboni Branch</div>
+    </div>
+    <div class="tslide">
+      <div class="tstars">⭐⭐⭐⭐⭐</div>
+      <p class="ttext">"The facilities here are incredible. iPads, trampolines, a playhouse - my son comes home every day with something new to show me. Best decision we ever made for our family!"</p>
+      <div class="tname">David M.</div><div class="trole">Parent · Mlimani City Branch</div>
+    </div>
+    <div class="tslide">
+      <div class="tstars">⭐⭐⭐⭐⭐</div>
+      <p class="ttext">"As a working parent I need to know my child is safe and happy. Dallas Kids Zone gives me that peace of mind every single day. The staff genuinely love the children - you can feel it!"</p>
+      <div class="tname">Fatuma R.</div><div class="trole">Parent · Kigamboni Branch</div>
+    </div>
+    <div class="tslide">
+      <div class="tstars">⭐⭐⭐⭐⭐</div>
+      <p class="ttext">"My twins joined at 3 years old. By age 5 they could read, count and write beautifully! The competence-based approach really works. We recommend Dallas Kids Zone to every parent we know!"</p>
+      <div class="tname">Grace & Peter K.</div><div class="trole">Parents · Mlimani City Branch</div>
+    </div>
+    <div class="tdots" id="tdots"></div>
+  </div>
+</section>
+
+<!-- ENROLL -->
+<section class="enroll" id="enroll">
+  <div class="ebubble">🎒 Ready to Join the Family?</div>
+  <h2 class="etitle">Give Your Child the <span style="color:var(--yellow)">Best Start</span> in Life!</h2>
+  <p class="esub">Spaces are limited - contact us today to schedule a visit and see the magic of Dallas Kids Zone for yourself!</p>
+  <div class="ebtns">
+    <a href="tel:+255655306060" class="btn btn-pink">📞 Call Kigamboni</a>
+    <a href="tel:+255717406060" class="btn btn-blue">📞 Call Mlimani City</a>
+  </div>
+  <div class="cpills">
+    <a href="https://www.instagram.com/dallas_kids_zone/" target="_blank" class="cpill">📸 @dallas_kids_zone</a>
+    <a href="tel:+255655306060" class="cpill">📞 0655-306060</a>
+    <a href="tel:+255717406060" class="cpill">📞 0717-406060</a>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section class="gallery" id="gallery">
+  <h2 class="sec-title">Our <span style="color:var(--blue)">Gallery</span> 📸</h2>
+  <p class="sec-sub">A peek into our fun, learning, and play!</p>
+  <div class="gcarousel">
+    <div class="gslide on"><img src="https://placehold.co/600x400/FF4D8D/FFF?text=Play+Time" alt="Gallery 1"></div>
+    <div class="gslide"><img src="https://placehold.co/600x400/4ECDC4/FFF?text=Learning" alt="Gallery 2"></div>
+    <div class="gslide"><img src="https://placehold.co/600x400/FFD93D/333?text=Art+Fun" alt="Gallery 3"></div>
+    <div class="gslide"><img src="https://placehold.co/600x400/9B5DE5/FFF?text=Outdoor" alt="Gallery 4"></div>
+    <div class="gdots" id="gdots"></div>
+  </div>
+</section>
+
+<footer>
+  <p>⭐ <strong>Dallas Kids Zone</strong> - The Best Daycare & Nursery in Dar es Salaam, Tanzania 🇹🇿</p>
+  <p style="margin-top:5px">Kigamboni: 0655-306060 &nbsp;|&nbsp; Mlimani City: 0717-406060</p>
+  <p style="margin-top:5px">📸 Follow us: <strong>@dallas_kids_zone</strong></p>
+</footer>
+
+<a href="https://wa.me/255655306060" class="floatbtn floatbtn-whatsapp" target="_blank" rel="noopener" aria-label="WhatsApp us">
+  <span style="font-size:1.3em;vertical-align:middle;">🟢</span> WhatsApp Us
+</a>
+
+<script src="src/js/main.js"></script>
+
+</body>
+</html>
+
+
+
