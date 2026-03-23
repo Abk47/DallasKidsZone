@@ -3,7 +3,7 @@
   --yellow: #FFD93D; --orange: #FF6B35; --pink: #FF4D8D;
   --blue: #4ECDC4; --purple: #9B5DE5; --green: #06D6A0;
   --cream: #FFFDF4; --dark: #1C1C3A;
-  --comic: 'Comic Sans MS', 'Comic Sans', cursive;
+  --comic: 'Comic Neue', 'Comic Sans MS', 'Comic Sans', cursive;
 }
 html { scroll-behavior: smooth; }
 body { font-family: var(--comic); background: var(--cream); color: var(--dark); overflow-x: hidden; }
