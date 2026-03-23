@@ -1,50 +1,69 @@
-﻿/* Branch contact row for phone and directions */
-.bcontact-row {
-  display: flex;
-  gap: 12px;
-  margin-top: 8px;
-  flex-wrap: wrap;
+﻿/* Pink gradient for Branch 1 Get Directions button */
+.button-group .bdir.bdir-pink {
+  background: linear-gradient(90deg, #FF4D8D 60%, #FFD93D 100%);
+  color: #fff;
 }
-.bdir {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  background: rgba(255,255,255,0.1);
-  border: 2px solid rgba(255,255,255,0.2);
-  border-radius: 30px;
-  padding: 10px 22px;
-  font-family: var(--comic);
-  font-size: 0.98rem;
-  font-weight: 700;
-  color: white;
+.button-group .bdir.bdir-pink:hover {
+  background: linear-gradient(90deg, #FFD93D 60%, #FF4D8D 100%);
+  color: #fff;
+  transform: translateY(-2px) scale(1.04);
+  box-shadow: 0 8px 28px rgba(255,77,141,0.18);
+}
+/* Modern button group for branch cards */
+/* Modern button group for branch cards - refined for perfect fit */
+  box-sizing: border-box;
   text-decoration: none;
-  transition: background 0.2s;
+  transition: background 0.2s, color 0.2s, transform 0.18s;
+  padding: 0 0.5em;
+  min-width: 0;
+  max-width: 100%;
 }
-.bdir:hover {
-  background: rgba(255,255,255,0.2);
+.button-group .bphone {
+  background: rgba(255,255,255,0.13);
+  border: 2px solid rgba(255,255,255,0.18);
+  color: white;
+}
+.button-group .bphone:hover {
+  background: rgba(255,255,255,0.22);
   color: var(--dark);
 }
-/* Get Directions button for branches */
-.bdir {
-  display: inline-block;
-  margin-top: 12px;
+.button-group .bdir {
   background: linear-gradient(90deg, #4ECDC4 60%, #FFD93D 100%);
   color: #1C1C3A;
-  font-family: var(--comic);
   font-weight: 900;
-  font-size: 1.02rem;
-  padding: 12px 28px;
-  border-radius: 30px;
-  box-shadow: 0 4px 18px rgba(78,205,196,0.13);
-  text-decoration: none;
-  transition: background 0.18s, color 0.18s, transform 0.18s;
   border: none;
+  box-shadow: 0 4px 18px rgba(78,205,196,0.13);
 }
-.bdir:hover {
+.button-group .bdir:hover {
   background: linear-gradient(90deg, #FFD93D 60%, #4ECDC4 100%);
   color: #fff;
   transform: translateY(-2px) scale(1.04);
   box-shadow: 0 8px 28px rgba(255,217,61,0.18);
+}
+@media (max-width: 600px) {
+  .button-group {
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 12px;
+    width: 100%;
+  }
+  .button-group .bphone,
+  .button-group .bdir {
+    width: 100%;
+    min-width: 0;
+    max-width: 100%;
+    height: 44px;
+    font-size: 0.97rem;
+    padding-left: 0.2em;
+    padding-right: 0.2em;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  }
+  .button-group .bphone {
+    margin-bottom: 0;
+  }
+  .button-group .bdir {
+    margin-top: 0;
+  }
 }
 /* Highlight effect for why-choose cards when in view */
 .why-choose__card.card-highlight {
@@ -230,6 +249,18 @@ section { position: relative; z-index: 1; padding: 80px 20px; }
 .branches { background: var(--dark); }
 .brow { display: grid; grid-template-columns: repeat(auto-fit, minmax(290px, 1fr)); gap: 28px; max-width: 800px; margin: 0 auto; }
 .bcard { border-radius: 28px; padding: 38px 30px; transition: transform 0.25s; cursor: pointer; }
+.bcard { overflow: visible; position: relative; z-index: 1; }
+@media (max-width: 600px) {
+  .bcard {
+    padding: 28px 10px 24px 10px;
+    overflow: visible;
+  }
+  .button-group {
+    position: relative;
+    z-index: 2;
+    overflow: visible;
+  }
+}
 .bcard:hover { transform: translateY(-8px) scale(1.02); }
 .bk { background: linear-gradient(135deg, rgba(255,77,141,0.15), rgba(255,77,141,0.28)); border: 2px solid var(--pink); }
 .bm { background: linear-gradient(135deg, rgba(78,205,196,0.15), rgba(78,205,196,0.28)); border: 2px solid var(--blue); }
