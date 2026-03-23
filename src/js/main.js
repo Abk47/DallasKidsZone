@@ -57,6 +57,8 @@ document.addEventListener('DOMContentLoaded', function() {
   // Gallery Carousel
   const gslides = document.querySelectorAll('.gslide');
   const gdotsEl = document.getElementById('gdots');
+  const gleft = document.querySelector('.garrow-left');
+  const gright = document.querySelector('.garrow-right');
   let gcur = 0;
   gslides.forEach((_, i) => {
     const d = document.createElement('button');
@@ -67,11 +69,28 @@ document.addEventListener('DOMContentLoaded', function() {
   function gGoTo(n) {
     gslides[gcur].classList.remove('on');
     gdotsEl.children[gcur].classList.remove('on');
-    gcur = n;
+    gcur = (n + gslides.length) % gslides.length;
     gslides[gcur].classList.add('on');
     gdotsEl.children[gcur].classList.add('on');
   }
-  setInterval(() => gGoTo((gcur + 1) % gslides.length), 4000);
+  setInterval(() => gGoTo(gcur + 1), 4000);
+
+  // Manual navigation: arrow buttons
+  if (gleft && gright) {
+    gleft.addEventListener('click', () => gGoTo(gcur - 1));
+    gright.addEventListener('click', () => gGoTo(gcur + 1));
+  }
+
+  // Touch swipe for gallery
+  const gcarousel = document.querySelector('.gcarousel');
+  let gxStart = 0;
+  if (gcarousel) {
+    gcarousel.addEventListener('touchstart', e => { gxStart = e.touches[0].clientX; }, { passive: true });
+    gcarousel.addEventListener('touchend', e => {
+      const gdiff = gxStart - e.changedTouches[0].clientX;
+      if (Math.abs(gdiff) > 40) gGoTo(gcur + (gdiff > 0 ? 1 : -1));
+    }, { passive: true });
+  }
 
   // Hero card click
   document.querySelectorAll('.hcard').forEach(c => {
