@@ -1,16 +1,24 @@
 ﻿
 document.addEventListener('DOMContentLoaded', function() {
-    // Why Choose Us cards scroll effect
+        // Click effect for Why Choose Us cards
+        document.querySelectorAll('.why-choose__card').forEach(card => {
+          card.addEventListener('click', function() {
+            card.classList.add('active');
+            setTimeout(() => card.classList.remove('active'), 600);
+          });
+        });
+    // Modern scroll effect for Why Choose Us cards
+    const whyCards = document.querySelectorAll('.why-choose__card');
     const cardObs = new IntersectionObserver(entries => {
       entries.forEach((entry, i) => {
         if (entry.isIntersecting) {
-          setTimeout(() => entry.target.classList.add('card-highlight'), i * 100);
+          setTimeout(() => entry.target.classList.add('visible'), i * 120);
         } else {
-          entry.target.classList.remove('card-highlight');
+          entry.target.classList.remove('visible');
         }
       });
-    }, { threshold: 0.2 });
-    document.querySelectorAll('.why-choose__card').forEach(card => cardObs.observe(card));
+    }, { threshold: 0.18 });
+    whyCards.forEach(card => cardObs.observe(card));
   // Scroll reveal
   const obs = new IntersectionObserver(entries => {
     entries.forEach((e, i) => { if (e.isIntersecting) setTimeout(() => e.target.classList.add('vis'), i * 80); });

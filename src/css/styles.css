@@ -66,11 +66,16 @@
   }
 }
 /* Highlight effect for why-choose cards when in view */
-.why-choose__card.card-highlight {
-  box-shadow: 0 0 0 4px #FFD93D, 0 8px 32px rgba(255,77,141,0.13), 0 2px 16px rgba(78,205,196,0.13);
-  border-color: #FFD93D !important;
-  background: #fffbe7;
-  transition: box-shadow 0.4s, background 0.4s, border-color 0.4s;
+.why-choose__card {
+  opacity: 0;
+  transform: translateY(40px) scale(0.96);
+  transition: opacity 0.7s cubic-bezier(.4,0,.2,1), transform 0.7s cubic-bezier(.4,0,.2,1);
+  will-change: opacity, transform;
+}
+.why-choose__card.visible {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+  box-shadow: 0 8px 32px rgba(255,77,141,0.10), 0 2px 16px rgba(78,205,196,0.10);
 }
 * { margin: 0; padding: 0; box-sizing: border-box; }
 :root {
