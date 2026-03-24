@@ -3,16 +3,6 @@
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  background: rgba(255,255,255,0.85);
-  border: none;
-  font-size: 2rem;
-  color: var(--blue, #1e90ff);
-  cursor: pointer;
-  z-index: 2;
-  padding: 0.2em 0.6em;
-  border-radius: 50%;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-  transition: background 0.2s, color 0.2s;
 }
 .garrow-left {
   left: 10px;
