@@ -1,4 +1,9 @@
-﻿/* Gallery carousel arrow buttons */
+﻿@media (max-width: 600px) {
+  .wa-label {
+    display: none !important;
+  }
+}
+/* Gallery carousel arrow buttons */
 .garrow {
   position: absolute;
   top: 50%;
