@@ -33,8 +33,8 @@
   transform: translateY(-2px) scale(1.04);
   box-shadow: 0 8px 28px rgba(255,77,141,0.18);
 }
-/* Modern button group for branch cards */
 /* Modern button group for branch cards - refined for perfect fit */
+.button-group .bphone, .button-group .bdir {
   box-sizing: border-box;
   text-decoration: none;
   transition: background 0.2s, color 0.2s, transform 0.18s;
@@ -370,7 +370,7 @@ footer strong { color: var(--yellow); }
 
 /* mobile drawer */
 .mobile-menu {
-  display: none; position: fixed; inset: 0; z-index: 99;
+  display: none; position: fixed; inset: 0; z-index: 101;
   background: var(--dark); flex-direction: column;
   align-items: center; justify-content: center; gap: 28px;
 }

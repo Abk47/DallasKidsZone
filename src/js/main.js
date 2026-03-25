@@ -98,13 +98,11 @@ document.addEventListener('DOMContentLoaded', function() {
   const hbtn = document.getElementById('hbtn');
   const mmenu = document.getElementById('mmenu');
   const mclose = document.getElementById('mclose');
-  function openMenu()  { 
-    console.log("openMenu called");
-    mmenu.classList.add('open');    hbtn.classList.add('open');    document.body.style.overflow='hidden'; 
+  function openMenu()  {
+    mmenu.classList.add('open');    hbtn.classList.add('open');    document.body.style.overflow='hidden';
   }
-  function closeMenu(e) { 
-    console.log("closeMenu called");
-    mmenu.classList.remove('open'); hbtn.classList.remove('open'); document.body.style.overflow=''; 
+  function closeMenu(e) {
+    mmenu.classList.remove('open'); hbtn.classList.remove('open'); document.body.style.overflow='';
     if (e) e.stopPropagation(); // Prevent bubbling to parent
   }
   if (hbtn) hbtn.addEventListener('click', openMenu);
